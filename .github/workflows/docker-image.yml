@@ -59,7 +59,7 @@ jobs:
         run: |
           TAG=${{ github.ref }}
           VERSION=${TAG#refs/tags/}
-          echo "app_version=$VERSION" >> "$GITHUB_ENV"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
 
       - uses: actions/checkout@v4
       - name: helm lint
