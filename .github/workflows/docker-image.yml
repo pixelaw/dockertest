@@ -59,7 +59,7 @@ jobs:
         run: |
           TAG=${{ github.ref }}
           VERSION=${TAG#refs/tags/}
-          echo "::set-output name=version::$(echo VERSION)"
+          echo "::set-output name=version::$(echo $VERSION)"
 
       - uses: actions/checkout@v4
       - name: helm lint
