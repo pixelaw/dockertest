@@ -1,0 +1,26 @@
+projectName: pixelaw-core
+
+nameSpace: test
+
+domainName: pixelaw.xyz
+
+subDomain: test
+
+subDomainName:
+  pixelaw: test
+  katana: katana.test
+  torii: torii.test
+  grpcTorii: grpc.test
+
+dockerImage: ghcr.io/pixelaw/core:latest
+
+worldAddress: "0x6395ccab8983e6598b8d54bac18cadb63d04b8e4631bde418a2cfb504b59a89"
+
+webApp:
+  katanaUrl: "https://api.cartridge.gg/x/pixelaw1/katana"
+  toriiUrl: "https://api.cartridge.gg/x/pixelaw1/torii"
+  katanaSlotUrl: "https://api.cartridge.gg/x/pixelaw1/katana"
+  toriiSlotUrl: "https://api.cartridge.gg/x/pixelaw1/torii"
+  seed: "7380699824140797174"
+  totalAccounts: "4"
+
