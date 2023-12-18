@@ -1,6 +1,6 @@
 [package]
 cairo-version = "2.3.0"
-name = "pixelaw-core-contracts"
+name = "pixelaw"
 version = "0.0.40"
 homepage = "https://github.com/pixelaw/core"
 
