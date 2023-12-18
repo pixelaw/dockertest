@@ -81,6 +81,5 @@ COPY ./contracts ./contracts
 RUN sozo build --manifest-path ./contracts/Scarb.toml
 
 LABEL org.opencontainers.image.description = "PixeLAW core container"
-LABEL org.opencontainers.image.source = "https://github.com/pixelaw/core"
 
 CMD ["bash", "./startup.sh"]
