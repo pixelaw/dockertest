@@ -76,5 +76,5 @@ jobs:
       - name: helm push - test
         if: ${{ github.event_name == 'push' }}
         run: |
-          helm push pixelaw-test-${VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
+          helm push ${IMAGE_NAME}-${VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
 
