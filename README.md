@@ -22,6 +22,7 @@ This repository includes core components and systems. For more details, please c
 - name
 - permissions (bool hashmap of appname+property)
 
+
   
 ## Core Pixel Behavior
 - **update_all**
