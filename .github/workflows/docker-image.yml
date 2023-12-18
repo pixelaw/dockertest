@@ -19,7 +19,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+      - name: Check that this is "main" branch
+        run: |
+          BRANCH_NAME=$(git branch --contains ${{ github.sha }} | sed -n 2p | awk '{print $1}')
+          if [ "$BRANCH_NAME" != "main" ]; then
+            echo "This is not the main branch. Exiting."
+            exit 1
+          fi
       - name: Log in to the Container registry
         uses: docker/login-action@v3
         with:
