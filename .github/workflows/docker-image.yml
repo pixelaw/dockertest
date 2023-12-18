@@ -39,6 +39,6 @@ jobs:
           push: true
           tags: pixelaw/core:latest
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-from: type=registry,ref=user/app:latest
+          cache-to: type=inline
 
