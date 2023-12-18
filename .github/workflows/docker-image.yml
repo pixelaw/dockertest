@@ -39,6 +39,6 @@ jobs:
           push: true
           tags: pixelaw/core:latest
           labels: ${{ steps.meta.outputs.labels }}
-#          cache-from: type=registry,ref=pixelaw/core:latest
-#          cache-to: type=inline
+          cache-from: type=registry,ref=pixelaw/core:latest
+          cache-to: type=inline
 
