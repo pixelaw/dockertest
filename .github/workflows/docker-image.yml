@@ -38,15 +38,15 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=sha
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=registry,ref=pixelaw/core:latest
-          cache-to: type=inline
+#      - name: Build and push Docker image
+#        uses: docker/build-push-action@v5
+#        with:
+#          context: .
+#          push: true
+#          tags: ${{ steps.meta.outputs.tags }}
+#          labels: ${{ steps.meta.outputs.labels }}
+#          cache-from: type=registry,ref=pixelaw/core:latest
+#          cache-to: type=inline
     outputs:
       tags: ${{ steps.build.outputs.tags }}
 
