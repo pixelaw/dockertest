@@ -105,5 +105,5 @@ jobs:
       - name: helm push - test
         if: ${{ github.event_name == 'push' }}
         run: |
-          helm push dockertest-${VERSION}.tgz oci://ghcr.io/pixelaw
+          helm push dockertest-${VERSION}.tgz oci://ghcr.io/pixelaw/charts
 
